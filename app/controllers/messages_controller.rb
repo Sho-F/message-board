@@ -20,7 +20,7 @@ class MessagesController < ApplicationController
       redirect_to @message
     else
       flash.now[:danger] = "Messageが投稿されませんでした"
-      redner :new
+      render :new
     end
   end
   
